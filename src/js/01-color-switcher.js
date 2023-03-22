@@ -1,9 +1,14 @@
 let a = 7;
 let b = 9;
+console.log('a, b :>> ', a, b);
 a = a + b;
 b = a - b;
 a = a - b;
-// func({ a, b }){ return { b, a } }
+function arrAB(a, b) {
+  return { b, a }
+}
+
+console.log('arrAB(7, 9) :>> ', arrAB(7, 9));
 [a, b] = [b, a]
 console.log('a, b :>> ', a, b);
 
