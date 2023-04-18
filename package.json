@@ -2,6 +2,7 @@
   "name": "js-hw-09",
   "version": "2.0.0",
   "description": "",
+  "main": "index.js",
   "homepage": "https://github.com/DmytroAV/js-hw-09.git",
   "scripts": {
     "start": "parcel src/*.html",
@@ -20,7 +21,9 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "caniuse-lite": "^1.0.30001469",
-    "modern-normalize": "^1.1.0"
+    "flatpickr": "^4.6.13",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

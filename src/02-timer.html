@@ -3,35 +3,45 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Countdown timer</title>
   <link rel="stylesheet" href="css/common.css" />
 </head>
 
 <body>
-  <p><a href="index.html">Go back</a></p>
 
-  <input type="text" id="datetime-picker" />
-  <button type="button" data-start>Start</button>
+  <div class="container">
+    <div class="button" id="button-6">
+      <div id="spin"></div>
+      <a class="link-goback" href="index.html">Go back</a>
+    </div>
+    <h1 class="header-timer">Countdown timer</h1>
+    <div class="datetime">
+      <input class="input-date" type="text" id="datetime-picker" />
+      <button class="btn-start" type="button" data-start>Start</button>
+    </div>
+    <div class="countdown-container">
+      <div class="days-container">
+        <span class="days" data-days>00</span>
+        <span class="days-label">Days</span>
+      </div>
+      <div class="hours-container">
+        <span class="hours" data-hours>00</span>
+        <span class="hours-label">Hours</span>
+      </div>
+      <div class="minutes-container">
+        <span class="minutes" data-minutes>00</span>
+        <span class="minutes-label">Minutes</span>
+      </div>
+      <div class="seconds-container">
+        <span class="seconds" data-seconds>00</span>
+        <span class="seconds-label">Seconds</span>
+      </div>
+    </div>
 
-  <div class="timer">
-    <div class="field">
-      <span class="value" data-days>00</span>
-      <span class="label">Days</span>
-    </div>
-    <div class="field">
-      <span class="value" data-hours>00</span>
-      <span class="label">Hours</span>
-    </div>
-    <div class="field">
-      <span class="value" data-minutes>00</span>
-      <span class="label">Minutes</span>
-    </div>
-    <div class="field">
-      <span class="value" data-seconds>00</span>
-      <span class="label">Seconds</span>
-    </div>
   </div>
+
+
 
   <script src="./js/02-timer.js" type="module"></script>
 </body>

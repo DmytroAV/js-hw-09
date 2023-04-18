@@ -3,18 +3,32 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Color switcher</title>
   <link rel="stylesheet" href="css/common.css" />
 </head>
 
 <body>
-  <p><a href="index.html">Go back</a></p>
+  <div class="wrap">
+    <div class="button" id="button-6">
+      <div id="spin"></div>
+      <a class="link-goback" href="index.html">Go back</a>
+    </div>
 
-  <button type="button" data-start>Start</button>
-  <button type="button" data-stop>Stop</button>
+    <h1 class="title">Color switcher</h1>
+    <div class="color_btn">
+      <button class="button" id="button-6" type="button" data-start>
+        <div id="spin"></div>
+        <p class="btn_control">Start</p>
+      </button>
+      <button class="button" id="button-6" type="button" data-stop>
+        <div id="spin"></div>
+        <p class="btn_control">Stop</p>
+      </button>
+    </div>
+  </div>
 
-  <script src="./js/01-color-switcher.js" type="module"></script>
+  <script type="module" src="./js/01-color-switcher.js"></script>
 </body>
 
 </html>

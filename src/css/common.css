@@ -10,9 +10,29 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.task-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.list-title {
+  margin-left: 20px;
+}
+
+.list-items {
+  list-style: none;
+}
+
+.item-link {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.item-link a {
+  color: #212121;
+  text-decoration: none;
 }

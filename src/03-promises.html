@@ -3,29 +3,36 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Promise generator</title>
   <link rel="stylesheet" href="css/common.css" />
 </head>
 
 <body>
-  <p><a href="index.html">Go back</a></p>
+  <div class="container_form">
+    <div class="button" id="button-6">
+      <div id="spin"></div>
+      <a class="link-goback" href="index.html">Go back</a>
+    </div>
 
-  <form class="form">
-    <label>
-      First delay (ms)
-      <input type="number" name="delay" required />
-    </label>
-    <label>
-      Delay step (ms)
-      <input type="number" name="step" required />
-    </label>
-    <label>
-      Amount
-      <input type="number" name="amount" required />
-    </label>
-    <button type="submit">Create promises</button>
-  </form>
+    <h1 class="header">Promise generator</h1>
+
+    <form class="form">
+      <label class="label_form">
+        First delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+      <label class="label_form">
+        Delay step (ms)
+        <input type="number" name="step" required />
+      </label>
+      <label class="label_form">
+        Amount
+        <input type="number" name="amount" required />
+      </label>
+      <button class="btn-start" type="submit">Create promises</button>
+    </form>
+  </div>
 
   <script src="./js/03-promises.js" type="module"></script>
 </body>
